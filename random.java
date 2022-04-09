@@ -32,7 +32,7 @@ public class random {
         
         String sonuc = (notSonuc) ? "Gecti" : "Kaldi";
         
-        System.out.print(ort + " ortalamasý ile " + sonuc);
+        System.out.print(ort + " ortalamasÄ± ile " + sonuc);
     }
     
 }
