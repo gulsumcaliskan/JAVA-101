@@ -1,5 +1,6 @@
 import java.util.Scanner;
-public class asalSayi {
+
+public class PrimeNumberWithRecursive {
 	
 	static boolean isPrime(int x, int y){
 		if(x == 1){
@@ -20,10 +21,10 @@ public class asalSayi {
 	public static void main(String[] args){
 		
 		Scanner scan = new Scanner(System.in);
-		System.out.print("Sayý giriniz: ");
+		System.out.print("Please enter a number: ");
 		int number = scan.nextInt();
 		
-		System.out.println(isPrime(number, 2) ? number + " Asal Sayýdýr" : number + " Asal Sayý Deðildir.");
+		System.out.println(isPrime(number, 2) ? number + " is a Prime Number." : number + " is not a Prime Number.");
 		
 	}
 
