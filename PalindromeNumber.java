@@ -27,7 +27,7 @@ public class PalindromeNumber {
         num = input.nextInt();
         
         
-        if(isPalindrom(num)){
+        if(isPalindrome(num)){
             System.out.println(num + " is a Palindrome Number.");
         }else {
             System.out.println(num + " is not a Palindrome Number.");
