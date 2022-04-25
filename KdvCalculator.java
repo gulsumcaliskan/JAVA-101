@@ -7,7 +7,7 @@ public class kdv {
 		
 		Scanner input = new Scanner(System.in);
 		
-		System.out.print("Fiyatý giriniz: ");
+		System.out.print("FiyatÄ± giriniz: ");
 		tutar = input.nextDouble();
 		
 		double kdvTutar, kdvliTutar;
@@ -26,22 +26,22 @@ public class kdv {
 
 import java.util.Scanner;
 
-public class kdv {
+public class KdvCalculator {
 	public static void main(String[] args) {
 		
-		double tutar;
+		double total;
 		
 		Scanner input = new Scanner(System.in);
-		System.out.print("Fiyatý giriniz: ");
-		tutar = input.nextDouble();
+		System.out.print("Please enter the cost of your product: ");
+		total = input.nextDouble();
 		
-		double kdvOran1 = 0.18, kdvOran2 = 0.08;
+		double kdvRate1 = 0.18, kdvRate2 = 0.08;
 		
-		boolean kdvHesap = (tutar > 0 && tutar < 1000);
-		double kucuk = (tutar + tutar * kdvOran1);
-		double buyuk = (tutar + tutar * kdvOran2);
+		boolean kdvTotal = (total > 0 && total < 1000);
+		double kR1 = (total + total * kdvRate1);
+		double kR2 = (total + total * kdvRate2);
 		
-		System.out.println(kdvHesap ? "KDV'li tutar:" + kucuk : "KDV'li tutar:" + buyuk);
+		System.out.println(kdvTotal ? " with total of KDV:" + kR1 : " with total of KDV:" + kR2);
 		
 		
 	}
