@@ -1,22 +1,22 @@
 package gecme;
 
 import java.util.Scanner;
-public class sicaklik {
+public class EventSuggestion {
 	public static void main(String[] args) {
 		
 		int temperature; 
 		Scanner input = new Scanner(System.in);
-		System.out.print("Sýcaklýk deðerini giriniz: ");
+		System.out.print("Enter the value of air temperature: ");
 		temperature = input.nextInt();
 		
 		if (temperature < 5) {
-			System.out.print("Kayak yapmanýzý tavsiye ederiz");
+			System.out.print("We recommend you to skis");
 		}else if (temperature >= 5 && temperature <15) {
-			System.out.print("Sinemaya gitmenizi tavsiye ederiz");
+			System.out.print("We recommend you to cinema");
 		}else if (temperature >= 15 && temperature < 25) {
-			System.out.print("Piknik yapmanýzý tavsiye ederiz");
+			System.out.print("We recommend you to picnic");
 		}else {
-			System.out.print("Yüzmeye gitmenizi tavsiye ederiz");
+			System.out.print("We recommend you to swimming");
 		}
 		
 	}
