@@ -1,20 +1,20 @@
 /*
 import java.util.Scanner;
 
-public class hipotenus {
+public class Hypotenuse {
 	public static void main(String[] args) {
 		
 		int a, b;	
 		Scanner input = new Scanner(System.in);
-		System.out.print("a kenar uzunluðu: ");
+		System.out.print("Enter a side lenght value: ");
 		a = input.nextInt();
-		System.out.print("b kenar uzunluðu: ");
+		System.out.print("Enter a side lenght value: ");
 		b = input.nextInt();
 //		c = input.nextInt();
 		
 		double c = Math.sqrt((a * a) + (b * b));
 		
-		System.out.print("Hipotenüs uzunluðu: " + c);
+		System.out.print("The length of Hypotenuse: " + c);
 	}
 }
 
@@ -22,23 +22,24 @@ public class hipotenus {
 
 import java.util.Scanner;
 
-public class hipotenus {
+public class Hypotenuse {
 	public static void main(String[] args) {
 		
 		int a, b, c;
 		
 		Scanner input = new Scanner(System.in);
-		System.out.print("a kenar uzunluk deðeri: ");
+		System.out.print("Enter a side lenght value: ");
 		a = input.nextInt();
-		System.out.print("b kenar uzunluk deðeri: ");
+		System.out.print("Enter b side lenght value: ");
 		b = input.nextInt();
-		System.out.print("c kenar uzunluk deðeri: ");
+		System.out.print("Enter c side lenght value: ");
 		c = input.nextInt();
 		
 		int u = (a + b + c) / 2;
-		int cevre = (2 * u);
-		int alan = u * (u - a) * (u - b) * (u - c);
+		int perimeter = (2 * u);
+		int area = u * (u - a) * (u - b) * (u - c);
 		
-		System.out.println("Üçgenin alaný: " + alan);
+		System.out.println();
+		System.out.println("Area of Triangle: " + area);
 	}
 }
