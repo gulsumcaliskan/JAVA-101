@@ -1,9 +1,10 @@
 import java.util.Scanner;
-public class yildiz {
+
+public class StarTriangle {
 	public static void main(String[] args){
 		
 		Scanner input = new Scanner(System.in);
-		System.out.print("Basamak sayýsýný giriniz: ");
+		System.out.print("Enter number of steps: ");
 		int n = input.nextInt();
 		
 		for(int i = 1; i <= n; i++){
