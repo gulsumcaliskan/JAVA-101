@@ -1,17 +1,17 @@
 import java.util.Scanner;
-public class cift {
+public class EvenNumberAve {
 	public static void main(String[] args){
 		
-		int sayi;
+		int number;
 		Scanner input = new Scanner(System.in);
 		
-		System.out.print("Sayi giriniz: ");
-		sayi = input.nextInt();
+		System.out.print("Enter a number: ");
+		number = input.nextInt();
 		
 		int sum = 0, count = 0;
-		double ort;
+		double ave;
 		
-		for (int i = 0; i <= sayi; i++) {
+		for (int i = 0; i <= number; i++) {
 			if (i % 3 == 0 && i % 4 == 0){
 				sum+= i;
 				count++;
@@ -21,8 +21,8 @@ public class cift {
 		}	
 		
 		//System.out.println(count);
-		ort = sum / count;
-		System.out.println("Ortalama: " + ort);
+		ave = sum / count;
+		System.out.println("Average: " + ave);
 		
 	}
 }
