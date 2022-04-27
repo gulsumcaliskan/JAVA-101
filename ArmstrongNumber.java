@@ -1,20 +1,20 @@
 import java.util.Scanner;
-public class armstrong {
+public class ArmstrongNumber {
 	public static void main(String[] args){
 		
-		int number;
+	int number;
         int sum = 0;
 
-        Scanner inp = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
-        System.out.println("Sayı giriniz: ");
-        number = inp.nextInt();
+        System.out.print("Enter a number: ");
+        number = input.nextInt();
 
         while(number >= 1){
             sum += (number % 10);
             number = number / 10; 
         }
-        System.out.println("Toplam: " + sum);
+        System.out.println("Total: " + sum);
 		
 		
 	}
