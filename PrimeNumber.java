@@ -1,8 +1,7 @@
-
-public class asal {
+public class PrimeNumber {
 	public static void main(String[] args) {
 		
-		int sayac = 0;
+		int counter = 0;
 		
 		for (int i = 2; i <= 100; i++){
 			int control = 0;
@@ -14,7 +13,7 @@ public class asal {
 			}
 			if (control == 0){
 				System.out.print(i + " ");
-				sayac++;
+				counter++;
 			}
 		}
 		
