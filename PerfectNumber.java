@@ -1,9 +1,10 @@
 import java.util.Scanner;
-public class mukemmel {
+
+public class PerfectNumber {
 	public static void main(String[] args){
 		
 		Scanner input = new Scanner(System.in);
-		System.out.print("Bir sayý giriniz: ");
+		System.out.print("Enter a number: ");
 		int n = input.nextInt();
 		int total = 0;
 		
@@ -13,9 +14,9 @@ public class mukemmel {
 			}
 		}
 		if (total == n){
-			System.out.println(n + " Mukemmel bir sayýdýr");
+			System.out.println(n + " is a perfect number");
 		}else {
-			System.out.println(n + " Mukemmel bir sayý deðildir.");
+			System.out.println(n + " is not a perfect number");
 		}
 		
 		
