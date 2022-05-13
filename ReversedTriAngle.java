@@ -1,8 +1,9 @@
 import java.util.Scanner;
-public class tersucgen {
+
+public class ReversedTriAngle {
 	public static void main(String[] args){
 		Scanner input = new Scanner(System.in);
-		System.out.print("Basamak sayýsýný giriniz: ");
+		System.out.print("Please enter the step number: ");
 		int n = input.nextInt();
 		
 		for (int i = n - 1; i > 0; i--){
