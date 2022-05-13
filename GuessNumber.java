@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.Arrays;
 import java.util.Random;
 
-public class Tahmin {
+public class GuessNumber {
 	public static void main(String[] args){
 		
 		Random rand = new Random();
@@ -16,35 +16,35 @@ public class Tahmin {
 //		System.out.println(number);
 		
 		while(right < 5){
-			System.out.println("Lütfen tahmininizi giriniz: ");
+			System.out.println("Please enter your guess number: ");
 			selected = input.nextInt();
 			
 			if (selected < 0 || selected > 99){
-				System.out.println("Lütfen 0-100 arasýnda bir deðer giriniz.");
+				System.out.println("Please enter a value between 0-100.");
 				continue;
 			}
 			
 			if (selected == number){
-				System.out.println("Tebrikler doðru tahmin!! Tahmin ettiðiniz sayý: " + number);
+				System.out.println("Congratulation, correct guess number!! Your guess number is: " + number);
 				isWin = true;
 				break;
 			}else {
-				System.out.println("Hatalý bir sayý girdiniz.");
+				System.out.println("You entered a wrong number.");
 				if (selected > number){
-					System.out.println(selected + " sayýsý, girdiðiniz sayýdan büyüktür.");
+					System.out.println(selected + " number, is bigger than your entered number.");
 				}else {
-					System.out.println(selected + " sayýsý girdiðiniz sayýdan küçüktür.");
+					System.out.println(selected + " number, is smaller than your entered number.");
 				}
 				
-				System.out.println("Kalan hakkýnýz: " + (5 - right));
+				System.out.println("Rest right: " + (5 - right));
 			}
 			wrong[right++] = selected;
 			
 		}
 		
 		if (!isWin){
-			System.out.println("Kaybettiniz.");
-			System.out.println("Tahminleriniz: " + Arrays.toString(wrong));
+			System.out.println("You lost.");
+			System.out.println("Your guessing numbers: " + Arrays.toString(wrong));
 		}
 		
 		
