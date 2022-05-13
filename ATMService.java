@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class atm {
+public class ATMService {
 	public static void main(String[] args){
 		
 		Scanner input = new Scanner(System.in);
