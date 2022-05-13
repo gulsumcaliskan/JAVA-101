@@ -3,7 +3,7 @@ public class InfoProcessing extends Officer{
 	
 private String duty;
     
-    public BilgiIslem(String nameSurname, String telephone, String email, String departmant, String workingHours, String duty){
+    public InfoProcessing(String nameSurname, String telephone, String email, String departmant, String workingHours, String duty){
         super(nameSurname, telephone, email, departmant, workingHours);
         this.duty = duty;
     }
