@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class NoteAverage {
     public static void main(String[] args) {
         
-        int mat, fizik, kimya, turkce, tarih, muzik;
+        int math, physic, chemistry, turkish, history, music;
         
         Scanner input = new Scanner(System.in);
         
@@ -35,7 +35,7 @@ public class NoteAverage {
         System.out.print("Music note: ");
         music = input.nextInt();
         
-        int total = (math + physic + Chemistry + Turkish + History + music);
+        int total = (math + physic + chemistry + turkish + history + music);
         double ave = (total / 6.0);   
         
         boolean noteResult = (ave >= 60);
